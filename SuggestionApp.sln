@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32328.378
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuggestionAppUI", "SuggestionAppUI\SuggestionAppUI.csproj", "{35E13C0C-5099-4DC8-BA06-1A1DB6FFA890}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SuggestionAppUI", "SuggestionAppUI\SuggestionAppUI.csproj", "{35E13C0C-5099-4DC8-BA06-1A1DB6FFA890}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuggestionAppLibrary", "SuggestionAppLibrary\SuggestionAppLibrary.csproj", "{FAFFFF54-1A43-4D66-BB71-B858DA9A034F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{35E13C0C-5099-4DC8-BA06-1A1DB6FFA890}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35E13C0C-5099-4DC8-BA06-1A1DB6FFA890}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35E13C0C-5099-4DC8-BA06-1A1DB6FFA890}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAFFFF54-1A43-4D66-BB71-B858DA9A034F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAFFFF54-1A43-4D66-BB71-B858DA9A034F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAFFFF54-1A43-4D66-BB71-B858DA9A034F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAFFFF54-1A43-4D66-BB71-B858DA9A034F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
