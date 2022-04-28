@@ -21,18 +21,18 @@ public class MongoUserData : IUserData
       return await result.FirstOrDefaultAsync();
    }
 
-   public async Task<UserModel> GetUserFromAuthentication(string objectId)
+   public async Task<UserModel> GetUserFromAuthenticationAsync(string objectId)
    {
       var result = await _users.FindAsync(u => u.ObjectIdentifier == objectId);
       return await result.FirstOrDefaultAsync();
    }
 
-   public async Task CreateUser(UserModel user)
+   public async Task CreateUserAsync(UserModel user)
    {
       await _users.InsertOneAsync(user);
    }
 
-   public async Task UpdateUser(UserModel user)
+   public async Task UpdateUserAsync(UserModel user)
    {
       var filter = Builders<UserModel>.Filter.Eq("Id", user.Id);
       await _users.ReplaceOneAsync(filter, user, new ReplaceOptions { IsUpsert = true });
