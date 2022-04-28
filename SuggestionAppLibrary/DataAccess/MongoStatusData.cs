@@ -2,13 +2,13 @@
 
 namespace SuggestionAppLibrary.DataAccess;
 
-public class MogoStatusData : IStatusData
+public class MongoStatusData : IStatusData
 {
    private readonly IMongoCollection<StatusModel> _statuses;
    private readonly IMemoryCache _cache;
    private readonly string cacheName = "StatusData";
 
-   public MogoStatusData(IDbConnection db, IMemoryCache cache)
+   public MongoStatusData(IDbConnection db, IMemoryCache cache)
    {
       _cache = cache;
       _statuses = db.StatusCollection;
