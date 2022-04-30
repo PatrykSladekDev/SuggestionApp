@@ -104,7 +104,7 @@ public class MongoSuggestionData : ISuggestionData
       }
    }
 
-   public async Task CreateStatusAsync(SuggestionModel suggestion)
+   public async Task CreateSuggestionAsync(SuggestionModel suggestion)
    {
       var client = _db.Clinet;
 

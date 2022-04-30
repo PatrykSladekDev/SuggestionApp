@@ -3,7 +3,7 @@ namespace SuggestionAppLibrary.DataAccess;
 
 public interface ISuggestionData
 {
-   Task CreateStatusAsync(SuggestionModel suggestion);
+   Task CreateSuggestionAsync(SuggestionModel suggestion);
    Task<IEnumerable<SuggestionModel>> GetAllApprovedSuggestionsAsync();
    Task<IEnumerable<SuggestionModel>> GetAllSuggestionsAsync();
    Task<IEnumerable<SuggestionModel>> GetAllSuggestionsWaitingForApprovalAsync();
